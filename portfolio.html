@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arwa Adel Mohammed | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Language Toggle -->
+  <div class="lang-toggle">
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('ar')">عربي</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">A</span>
+        <span class="logo-text">Arwa</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-en="About" data-ar="عني">About</a></li>
+        <li><a href="#education" data-en="Education" data-ar="التعليم">Education</a></li>
+        <li><a href="#training" data-en="Experience" data-ar="الخبرات">Experience</a></li>
+        <li><a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a></li>
+        <li><a href="#activities" data-en="Activities" data-ar="الأنشطة">Activities</a></li>
+        <li><a href="#certs" data-en="Certifications" data-ar="الشهادات">Certifications</a></li>
+        <li><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          <span data-en="Open to Opportunities" data-ar="متاحة للفرص">Open to Opportunities</span>
+        </div>
+        <h1 class="hero-name">
+          <span data-en="ARWA" data-ar="أروى">ARWA</span>
+          <span class="highlight" data-en="ADEL" data-ar="عادل">ADEL</span>
+        </h1>
+        <p class="hero-title" data-en="Pharmacist | Medical Representative Aspirant" data-ar="صيدلانية | طموحة لتكون ممثلة طبية">Pharmacist | Medical Representative Aspirant</p>
+        <p class="hero-desc" data-en="Detail-oriented pharmacy graduate with a passion for healthcare, eager to contribute to company growth through effective product promotion and strong client engagement in the pharmaceutical industry." data-ar="خريجة صيدلة مهتمة بالتفاصيل وشغوفة بمجال الرعاية الصحية، تسعى للمساهمة في نمو الشركة من خلال الترويج الفعال للمنتجات وبناء علاقات قوية مع العملاء في صناعة الأدوية.">Detail-oriented pharmacy graduate with a passion for healthcare, eager to contribute to company growth through effective product promotion and strong client engagement in the pharmaceutical industry.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary" data-en="Get in Touch" data-ar="تواصلي معايا">
+            <span>&#9993;</span> Get in Touch
+          </a>
+          <a href="#education" class="btn-outline" data-en="View Resume" data-ar="شوفي السيرة">
+            <span>&#8595;</span> View Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <div class="photo-inner">
+            <!-- ⬇️ REPLACE: استبدلي الـ placeholder بصورتك الشخصية -->
+            <!-- <img src="your-photo.jpg" alt="Arwa Adel" /> -->
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+              </svg>
+              <span data-en="Your Photo Here" data-ar="صورتك هنا">Your Photo Here</span>
+            </div>
+            <p class="photo-name" data-en="Arwa Adel Mohammed" data-ar="أروى عادل محمد">Arwa Adel Mohammed</p>
+            <p class="photo-role" data-en="B.Pharm | Sinai University" data-ar="بكالوريوس صيدلة | جامعة سيناء">B.Pharm | Sinai University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <div class="stats-strip">
+    <div class="stats-container">
+      <div class="stat-item fade-in">
+        <div class="stat-number">2025</div>
+        <div class="stat-label" data-en="Graduation Year" data-ar="سنة التخرج">Graduation Year</div>
+      </div>
+      <div class="stat-item fade-in delay-1">
+        <div class="stat-number">3+</div>
+        <div class="stat-label" data-en="Training Experiences" data-ar="خبرة تدريبية">Training Experiences</div>
+      </div>
+      <div class="stat-item fade-in delay-2">
+        <div class="stat-number">4</div>
+        <div class="stat-label" data-en="Years of Leadership" data-ar="سنوات قيادية">Years of Leadership</div>
+      </div>
+      <div class="stat-item fade-in delay-3">
+        <div class="stat-number">2</div>
+        <div class="stat-label" data-en="Languages Spoken" data-ar="لغات">Languages Spoken</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About / Objective -->
+  <section class="section" id="about">
+    <div class="section-header fade-in">
+      <div class="section-tag" data-en="About Me" data-ar="عني">About Me</div>
+      <h2 class="section-title" data-en="Professional Objective" data-ar="الهدف المهني">Professional Objective</h2>
+    </div>
+    <div class="about-card fade-in">
+      <p class="about-text" data-en="Detail-oriented pharmacy graduate looking for a medical representative position to contribute to company growth through effective product promotion and strong client engagement. With hands-on experience across pharmacy, hospital, and pharmaceutical company settings, I bring a well-rounded understanding of the healthcare ecosystem and a proven track record of leadership and communication excellence." data-ar="خريجة صيدلة مهتمة بالتفاصيل وتبحث عن منصب ممثل طبي للمساهمة في نمو الشركة من خلال الترويج الفعال للمنتجات وبناء علاقات قوية مع العملاء. مع خبرة عملية في الصيدلية والمستشفى وشركة الأدوية، أمتلك فهماً شاملاً لنظام الرعاية الصحية وسجلاً حافلاً في القيادة والتميز التواصلي.">Detail-oriented pharmacy graduate looking for a medical representative position to contribute to company growth through effective product promotion and strong client engagement. With hands-on experience across pharmacy, hospital, and pharmaceutical company settings, I bring a well-rounded understanding of the healthcare ecosystem and a proven track record of leadership and communication excellence.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="section-header fade-in">
+      <div class="section-tag" data-en="Education" data-ar="التعليم">Education</div>
+      <h2 class="section-title" data-en="Academic Background" data-ar="المؤهل العلمي">Academic Background</h2>
+    </div>
+    <div class="timeline fade-in">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2021 – 2025</span>
+          <h3 class="timeline-title" data-en="Bachelor of Pharmacy (Pharma-D)" data-ar="بكالوريوس صيدلة (فارما-دي)">Bachelor of Pharmacy (Pharma-D)</h3>
+          <p class="timeline-sub" data-en="Sinai University — Kantara Branch" data-ar="جامعة سيناء — فرع القنطرة">Sinai University — Kantara Branch</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Training & Internships -->
+  <section class="section" id="training">
+    <div class="section-header fade-in">
+      <div class="section-tag" data-en="Experience" data-ar="الخبرات">Experience</div>
+      <h2 class="section-title" data-en="Training & Internships" data-ar="التدريب والتدريب العملي">Training & Internships</h2>
+    </div>
+    <div class="training-grid">
+      <div class="training-card fade-in">
+        <div class="training-icon pharmacy">&#128138;</div>
+        <h3 class="training-name">Amir Pharmacy</h3>
+        <p class="training-type" data-en="Pharmacy Training" data-ar="تدريب صيدلي">Pharmacy Training</p>
+      </div>
+      <div class="training-card fade-in delay-1">
+        <div class="training-icon hospital">&#127973;</div>
+        <h3 class="training-name">Baheya Hospital</h3>
+        <p class="training-type" data-en="Hospital Internship" data-ar="تدريب مستشفي">Hospital Internship</p>
+      </div>
+      <div class="training-card fade-in delay-2">
+        <div class="training-icon company">&#128200;</div>
+        <h3 class="training-name">Pentapharma</h3>
+        <p class="training-type" data-en="Pharmaceutical Company" data-ar="شركة أدوية">Pharmaceutical Company</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="section-header fade-in">
+      <div class="section-tag" data-en="Skills" data-ar="المهارات">Skills</div>
+      <h2 class="section-title" data-en="Professional Skills" data-ar="المهارات المهنية">Professional Skills</h2>
+    </div>
+    <div class="skills-container fade-in">
+      <div class="skill-tag"><span class="skill-dot"></span> <span data-en="Communication Skills" data-ar="مهارات التواصل">Communication Skills</span></div>
+      <div class="skill-tag"><span class="skill-dot"></span> <span data-en="Leadership" data-ar="القيادة">Leadership</span></div>
+      <div class="skill-tag"><span class="skill-dot"></span> <span data-en="Presentation Skills" data-ar="مهارات العرض">Presentation Skills</span></div>
+      <div class="skill-tag"><span class="skill-dot"></span> <span data-en="Negotiation Skills" data-ar="مهارات التفاوض">Negotiation Skills</span></div>
+      <div class="skill-tag"><span class="skill-dot"></span> <span data-en="Product Knowledge" data-ar="معرفة المنتجات">Product Knowledge</span></div>
+      <div class="skill-tag"><span class="skill-dot"></span> <span data-en="Time Management" data-ar="إدارة الوقت">Time Management</span></div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="section" id="languages">
+    <div class="section-header fade-in">
+      <div class="section-tag" data-en="Languages" data-ar="اللغات">Languages</div>
+      <h2 class="section-title" data-en="Language Proficiency" data-ar="إتقان اللغات">Language Proficiency</h2>
+    </div>
+    <div class="languages-grid fade-in">
+      <div class="lang-card">
+        <div class="lang-flag">&#127466;&#127468;</div>
+        <div class="lang-name" data-en="Arabic" data-ar="العربية">Arabic</div>
+        <div class="lang-level" data-en="Native Speaker" data-ar="لغة أم">Native Speaker</div>
+        <div class="lang-bar"><div class="lang-bar-fill arabic"></div></div>
+      </div>
+      <div class="lang-card">
+        <div class="lang-flag">&#127468;&#127463;</div>
+        <div class="lang-name" data-en="English" data-ar="الإنجليزية">English</div>
+        <div class="lang-level" data-en="Professional Working Proficiency" data-ar="كفاءة مهنية عالية">Professional Working Proficiency</div>
+        <div class="lang-bar"><div class="lang-bar-fill english"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities & Societies -->
+  <section class="section" id="activities">
+    <div class="section-header fade-in">
+      <div class="section-tag" data-en="Activities" data-ar="الأنشطة">Activities</div>
+      <h2 class="section-title" data-en="Activities & Societies" data-ar="الأنشطة والجمعيات">Activities & Societies</h2>
+    </div>
+    <div class="activities-list">
+      <div class="activity-item fade-in">
+        <div class="activity-icon a1">&#127919;</div>
+        <div>
+          <div class="activity-text" data-en="Class Representative (4 Years)" data-ar="ممثلة الفصل (٤ سنوات)">Class Representative (4 Years)</div>
+          <div class="activity-year">2020 – 2024</div>
+        </div>
+      </div>
+      <div class="activity-item fade-in delay-1">
+        <div class="activity-icon a2">&#127981;</div>
+        <div>
+          <div class="activity-text" data-en="EPSF Member" data-ar="عضو في جمعية طلاب الصيدلة المصريين">EPSF Member</div>
+          <div class="activity-year">2023 – 2024</div>
+        </div>
+      </div>
+      <div class="activity-item fade-in delay-2">
+        <div class="activity-icon a3">&#9989;</div>
+        <div>
+          <div class="activity-text" data-en="Head of Quality Committee at Faculty" data-ar="رئيسة لجنة الجودة بالكلية">Head of Quality Committee at Faculty</div>
+          <div class="activity-year">2024 – 2025</div>
+        </div>
+      </div>
+      <div class="activity-item fade-in delay-3">
+        <div class="activity-icon a4">&#128081;</div>
+        <div>
+          <div class="activity-text" data-en="President of Student Union — Kantara Branch" data-ar="رئيسة اتحاد طلاب فرع القنطرة">President of Student Union — Kantara Branch</div>
+          <div class="activity-year">2024 – 2025</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="section" id="certs">
+    <div class="section-header fade-in">
+      <div class="section-tag" data-en="Certifications" data-ar="الشهادات">Certifications</div>
+      <h2 class="section-title" data-en="Certifications & Courses" data-ar="الشهادات والدورات">Certifications & Courses</h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card fade-in">
+        <span class="cert-badge icdl">&#127891; ICDL</span>
+        <h3 class="cert-title" data-en="ICDL Certification" data-ar="شهادة ICDL الدولية">ICDL Certification</h3>
+        <p class="cert-desc" data-en="International Computer Driving License — demonstrating proficiency in essential IT and computer skills." data-ar="رخصة القيادة الدولية للحاسب الآلي — تثبت كفاءة في مهارات الحاسب وال تكنولوجيا الأساسية.">International Computer Driving License — demonstrating proficiency in essential IT and computer skills.</p>
+      </div>
+      <div class="cert-card wide fade-in delay-1">
+        <span class="cert-badge ps">&#127942; PharmaSchemes</span>
+        <h3 class="cert-title" data-en="PharmaSchemes — STAD Event 2024" data-ar="PharmaSchemes — فعاليات STAD 2024">PharmaSchemes — STAD Event 2024</h3>
+        <p class="cert-desc" data-en="Certificate for attending STAD Event 2024 which covered 8 comprehensive sessions on essential pharmaceutical and professional skills." data-ar="شهادة لحضور فعاليات STAD 2024 التي شملت ٨ جلسات شاملة حول المهارات الصيدلانية والمهنية الأساسية.">Certificate for attending STAD Event 2024 which covered 8 comprehensive sessions on essential pharmaceutical and professional skills.</p>
+        <div class="cert-sessions">
+          <span class="cert-session" data-en="Negotiation Skills" data-ar="مهارات التفاوض">Negotiation Skills</span>
+          <span class="cert-session" data-en="Put First Things First" data-ar="ضع الأمور الأهم أولاً">Put First Things First</span>
+          <span class="cert-session" data-en="Strategic Personal Branding" data-ar="العلامة التجارية الشخصية">Strategic Personal Branding</span>
+          <span class="cert-session" data-en="Sales Career in Pharma" data-ar="مسار المبيعات في الصيدلة">Sales Career in Pharma</span>
+          <span class="cert-session" data-en="Learn How to Learn" data-ar="تعلم كيف تتعلم">Learn How to Learn</span>
+          <span class="cert-session" data-en="Enteral & Parenteral Nutrition" data-ar="التغذية المعوية والوريدية">Enteral & Parenteral Nutrition</span>
+          <span class="cert-session" data-en="OTC Medications" data-ar="الأدوية بدون وصفة">OTC Medications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="section-header fade-in">
+      <div class="section-tag" data-en="Contact" data-ar="تواصل">Contact</div>
+      <h2 class="section-title" data-en="Get in Touch" data-ar="تواصلي معايا">Get in Touch</h2>
+      <p class="section-subtitle" data-en="Feel free to reach out for any opportunities or inquiries." data-ar="متفضلة تواصلي معايا لأي فرص أو استفسارات.">Feel free to reach out for any opportunities or inquiries.</p>
+    </div>
+    <div class="contact-grid fade-in">
+      <div class="contact-item">
+        <div class="contact-icon">&#128205;</div>
+        <div class="contact-label" data-en="Location" data-ar="الموقع">Location</div>
+        <div class="contact-value" data-en="Al Sahah St, Al Hussaynia, Sharqia" data-ar="شارع الصحة، الحسينية، الشرقية">Al Sahah St, Al Hussaynia, Sharqia</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">&#128222;</div>
+        <div class="contact-label" data-en="Phone" data-ar="الموبايل">Phone</div>
+        <div class="contact-value"><a href="tel:01271197720" style="color:inherit;text-decoration:none;">01271197720</a></div>
+      </div>
+      <div class="contact-item" style="grid-column: 1 / -1;">
+        <div class="contact-icon">&#9993;</div>
+        <div class="contact-label" data-en="Email" data-ar="الإيميل">Email</div>
+        <div class="contact-value"><a href="mailto:a.mohammed2312@su.edu.eg" style="color:inherit;text-decoration:none;">a.mohammed2312@su.edu.eg</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p data-en="&copy; 2025 Arwa Adel Mohammed. All Rights Reserved." data-ar="&copy; ٢٠٢٥ أروى عادل محمد. جميع الحقوق محفوظة.">&copy; 2025 Arwa Adel Mohammed. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
